@@ -1,0 +1,20 @@
+
+
+
+<article id="tease-{{post.ID}}" class="masonry-post post post-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="grid-post-simple">
+        <div class="thumbnail-post"><img src="{{ post.thumbnail.src }}"></div>
+        <div class="info-post">
+            <p class="term">{{ function('the_terms', function('get_the_ID'), 'category' ) }}</p>
+            <h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
+            {{ post.content|truncate(20) }}
+            <div class="block_btnLink">
+                <a href="{{ post.link|e('esc_url') }}">Lire la suite</a>
+            </div>
+            <ul class="meta-post">
+               <li>{{ post.date }}</li>
+            </ul>
+
+        </div>
+    </div>
+</article>

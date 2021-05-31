@@ -1,0 +1,369 @@
+/* @media only screen and (max-width: 991px){
+    #sect-str .vc_col-sm-6 {
+        width: 100%;
+    }
+
+    .blog-left-str .sub-title-sect, .blog-left-str h2, .blog-left-str p {
+        text-align: center;
+    }
+
+    .blog-left-str .wrap-link.lft {
+        text-align: center;
+    }
+
+    #footer .inner-wrap h5, #footer .inner-wrap ul li, .lep {
+        text-align: center;
+    }
+
+    .foot-middle .container .row > div {
+        margin-bottom: 1em;
+    }
+
+    .mc4wp-form-fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mb1em {
+        margin-bottom: 1em;
+        height: 420px;
+    }
+
+    .wrap-link.ct {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-lg-4.col-md-6.articleHome-col {
+        margin-bottom: 1em;
+    }
+
+    #navbarSupportedContent {
+        display: none!important;
+    }
+
+    .navbar-toggler {
+        display: block!important;
+    }
+
+    .navbar.navbar-expand-md.navbar-light {
+        justify-content: space-between!important;
+    }
+
+    .start-header {
+        padding: 0;
+    }
+
+    .main {
+        padding-top: 29px;
+    }
+
+    .content-link-sub-page-mobile {
+        display: block;
+        padding: 1em 0;
+    }
+
+    .content-link-sub-page-mobile .dropdown {
+        text-align: center;
+    }
+
+    .content-link-sub-page{
+        display: none;
+    }
+
+    .select_ {
+        height: 50px;
+        border: 1px solid #ddd;
+        width: 100%;
+        padding-left: 1em;
+        text-align: center;
+    }
+
+    li.ezeed {
+        background: #fff;
+        padding: 0 1em;
+    }
+
+    li.ezeed {
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .titre-title {
+        font-size: 2.8rem!important;
+    }
+
+    .row.odas.itemService_row {
+        padding: 0 1em;
+    }
+
+    .row.odas.itemService_row .col-md-6 {
+        width: 50%;
+    }
+
+    .sidebar.sidebar-left {
+        margin-bottom: 3em!important;
+    }
+}
+
+@media only screen and (min-width: 992px){
+   .col-lg-4.col-md-6.articleHome-col:nth-last-child(1){
+        display: none;
+    }
+
+    .content-link-sub-page-mobile {
+        display: none;
+    }
+
+    .content-link-sub-page{
+        display: block;
+    }
+
+    .nav-main {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px){
+
+    .row.odas.itemService_row {
+        padding: 0 6em;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .odas-style-tag {
+        bottom: 75%;
+    }
+
+    .odas-footer-post img {
+        width: 48%;
+    }
+
+    .foot-middle .col-lg-3.col-md-6.col-sm-12, .foot-middle .inner-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner-wrap h5 {
+        margin-bottom: 1em;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 576px){
+
+    .row.odas.itemService_row {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 449px){
+
+    .row.odas.itemService_row {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 1314px){
+
+    .nav-item {
+        padding: 0!important;
+    }
+
+    .nav-item.of_ {
+        padding: 0 .5em !important;
+    }
+
+    .nav-link {
+        font-size: .9em;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .nav-item.ml-md-4,.nav-item.mx-md-4 {
+        margin-left: 1rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 1314px) {
+    .nav-item.pl-md-0.ml-0.ml-md-4.of_ {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item.col-lg-6.pd0 {
+        margin-bottom: 1em;
+    }
+    .row.odas.itemService_row {
+        padding: 0 1em;
+    }
+    .showMobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .showMobile {
+        display: none;
+    }
+    .odas.itemService_row .dtl {
+        display: none!important;
+    }
+    .vc_custom_1581064373654 {
+        margin-top:0!important;
+    }
+    .iconBox > .iconBox-container {
+        padding: 20px 30px 23px 30px;
+    }
+    .item.col-lg-6.pd0 {
+        height: 300px;
+    }
+}*/
+
+
+/*******************************************************************************/
+
+
+                                 /* HEADER  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+    .header-page-head {
+        padding: 0;
+        padding-bottom: .7em;
+        padding-top: 1.3em;
+    }
+
+    .header-page-head .title {
+        padding: .1em 0;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .navigation-wrap {
+        display: none!important;
+    }
+    .main {
+        padding-top: 0!important;
+    }
+}
+
+/*******************************************************************************/
+
+
+                                 /* FOOTER  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+
+
+}
+
+/*******************************************************************************/
+
+
+                                 /* HOME  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+    #nav .container {
+        margin: 0!important;
+        max-width: 100%!important;
+    }
+
+    .home .elementor-6 .elementor-element.elementor-element-16385d1 {
+        margin-top: -101px!important;
+    }
+
+    .navbar-brand img {
+        height: auto;
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .home .elementor-6 .elementor-element.elementor-element-16385d1 {
+        margin-top: -175px!important;
+    }
+}
+
+
+/*******************************************************************************/
+
+
+                                /* SERVICE  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+    .header-page-head {
+        margin-top: 1em;
+    }
+
+}
+
+
+/*******************************************************************************/
+
+
+                                /* UTILISATEUR  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+
+}
+
+
+/*******************************************************************************/
+
+
+                            /* PRESENTATION  */
+
+
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1199px){
+
+}

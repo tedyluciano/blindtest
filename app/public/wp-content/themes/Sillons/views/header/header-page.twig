@@ -1,0 +1,94 @@
+{% block header %}
+
+    {% set thumb_attachement =  post.thumbnail.src|tojpg  %}
+    {% set thumb_other =  Image(61).src('full')|e('esc_url')  %}
+    {% set id_parent = function('wp_get_post_parent_id', function('get_the_ID'))  %}
+
+<header class="header-page-head" style="background:transparent url('{% if thumb_attachement != '' %}{{ thumb_attachement }}{% else %}{{ thumb_other }}{% endif %}')no-repeat center">
+    <div class="overlay"></div>
+    <div class="container" style="height: inherit">
+        <div class="row" style="height: inherit">
+            <div class="col-md-12 head_pages">
+
+                <h1 class="title" style="">{{ function('the_title') }}</h1>
+                <div class="sillonsBreadcrumbs">
+                    {{ function('sillonsBreadcrumbs') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    {% if function('isBodyClass', 'page-id-8') %}
+        <nav class="socials">
+        <ul>
+            <li class="rdv">
+                <a href="#rdv">
+                    <span>Prise de rendez-vous en ligne</span>
+                    <img class="imgSticky" src="{{ Image(1013).src('full')|e('esc_url')  }}" alt="">
+                </a>
+            </li>
+            <li class="teleconsultations">
+                <a href="#teleconsultations">
+                    <span>Téléconsultations</span>
+                    <img class="imgSticky" src="{{ Image(1012).src('full')|e('esc_url')  }}" alt="">
+                </a>
+            </li>
+            <li class="telepaiement">
+                <a href="#telepaiement">
+                    <span>Télépaiement des titres</span>
+                    <img class="imgSticky" src="{{ Image(1015).src('full')|e('esc_url')  }}" alt="">
+                </a>
+            </li>
+            <li class="preadmission">
+                <a href="#preadmission">
+                    <span>Pré-admission</span>
+                    <img class="imgSticky" src="{{ Image(1014).src('full')|e('esc_url')  }}" alt="">
+                </a>
+            </li>
+            <li class="parcourspatient">
+                <a href="#parcourspatient">
+                    <span>Visualisation du parcours patient</span>
+                    <img class="imgSticky" src="{{ Image(1016).src('full')|e('esc_url')  }}" alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    {% endif %}
+    {% if function('isBodyClass', 'page-id-20') %}
+    <button class="reset-button animated shake" onclick="show()">Nous soumettre une question !</button>
+    <div id="discord-shoutout" class="discord-shoutout">
+        <div class="shoutout-inner">
+            {{ function('do_shortcode', '[contact-form-7 id="885" title="Answers"]') }}
+        </div>
+    </div>
+    <script type="text/javascript">
+        function show() {
+            setTimeout(
+                function() {
+                    document.getElementById('discord-shoutout').classList.add('online');
+                },
+                200
+            );
+        }
+
+        function reset() {
+            hide();
+            setTimeout(show, 1500);
+        }
+
+
+        jQuery('.discord-button.discord-secondary').on('click', function(event){
+            event.preventDefault();
+            jQuery('div#wpcf7-f885-o1 > form').get(0).reset();
+            // jQuery('.wpcf7-response-output').css('display', 'none');
+            document.getElementById('discord-shoutout').classList.remove('online');
+        });
+
+        //show();
+    </script>
+   {% endif %}
+{% endblock %}
+
+
+

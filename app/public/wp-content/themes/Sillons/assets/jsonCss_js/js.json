@@ -1,0 +1,30 @@
+{
+  "modernizr": [{ "handle": "modernizr","src": "/core/script/jquery/modernizr-3.6.0.min.js","version": "3.3.1"}],
+  "jquery": [{ "handle": "jquery","src": "/core/script/jquery/jquery-3.3.1.min.js","version": "3.3.1"}],
+  "popper": [{ "handle": "popper","src": "/js/base/popper.js","version": "2"}],
+  "bootstrap": [{ "handle": "bootstrap","src": "/core/bootstrap/js/bootstrap.min.js","version": "2"}],
+
+  "classie": [{ "handle": "classie","src": "/js/classie.js","version": "2"}],
+  "uisearch": [{ "handle": "uisearch","src": "/js/uisearch.js","version": "2"}],
+  "magnific-popup": [{ "handle": "magnific-popup","src": "/js/base/jquery.magnific-popup.min.js","version": "2"}],
+  "parallax": [{ "handle": "parallax","src": "/js/base/parallax.min.js","version": "2"}],
+  "waypoints": [{ "handle": "waypoints","src": "/js/base/waypoints.min.js","version": "2"}],
+  "counterup": [{ "handle": "counterup","src": "/js/base/jquery.counterup.min.js","version": "2"}],
+  "appear": [{ "handle": "appear","src": "/js/base/jquery.appear.min.js","version": "2"}],
+  "scrolling-nav": [{ "handle": "scrolling-nav","src": "/js/base/scrolling-nav.js","version": "2"}],
+  "jquery-easing": [{ "handle": "jquery-easing","src": "/js/base/jquery.easing.min.js","version": "2"}],
+  "wow": [{ "handle": "wow","src": "/animate/wow.js","version": "2"}],
+  "nice-select": [{ "handle": "nice-select","src": "/js/jquery.nice-select.min.js","version": "2"}],
+  "fastclick": [{ "handle": "fastclick","src": "/js/fastclick.js","version": "2"}],
+  "Shorten": [{ "handle": "Shorten","src": "/js/jquery.shorten.js","version": "2"}],
+  "beefup": [{ "handle": "beefup","src": "/js/jquery.beefup.min.js","version": "2"}],
+  "prism": [{ "handle": "prism","src": "/js/prism.js","version": "2"}],
+  "preloadinator": [{ "handle": "preloadinator","src": "/js/jquery.preloadinator.min.js","version": "2"}],
+  "wombat-select": [{ "handle": "wombat-select","src": "/js/wombat-select-jquery.min.js","version": "2"}],
+  "matchHeight": [{ "handle": "matchHeight","src": "/js/jquery.matchHeight-min.js","version": "2"}],
+
+  "main-base": [{ "handle": "main-base","src": "/js/base/main.js","version": "2"}],
+  "shortcodes": [{ "handle": "shortcodes","src": "/js/shortcodes.js","version": "2"}],
+  "main": [{ "handle": "main-all","src": "/js/main-all.js","version": "2"}]
+}
+

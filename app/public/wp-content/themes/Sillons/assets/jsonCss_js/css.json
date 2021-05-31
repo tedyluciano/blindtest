@@ -1,0 +1,17 @@
+{
+  "bootstrap_4"         : [   {   "handle"  :     "bt4",                 "src": "/core/bootstrap/css/bootstrap.min.css","version": "4"}],
+  "normalize"         : [   {   "handle"  :     "normalize",                 "src": "/css/normalize.css","version": "1"}],
+  "animate"         : [   {   "handle"  :     "animate",                 "src": "/css/animate.min.css","version": "1"}],
+  "component"         : [   {   "handle"  :     "component",                 "src": "/css/component.css","version": "1"}],
+  "lineIcons"         : [   {   "handle"  :     "LineIcons",                 "src": "/css/LineIcons.css","version": "1"}],
+  "magnificpopup"         : [   {   "handle"  :     "magnificpopup",                 "src": "/css/magnific-popup.css","version": "1"}],
+  "default"         : [   {   "handle"  :     "default",                 "src": "/css/default.css","version": "1"}],
+  "style"         : [   {   "handle"  :     "style",                 "src": "/css/style.css","version": "1"}],
+  "rotating"         : [   {   "handle"  :     "rotating",                 "src": "/css/rotating-card.css","version": "1"}],
+  "nice-select"         : [   {   "handle"  :     "nice-select",                 "src": "/css/nice-select.css","version": "1"}],
+  "wombat-select"         : [   {   "handle"  :     "wombat-select",                 "src": "/css/wombat-select.css","version": "1"}],
+  "scrolling-tabs"         : [   {   "handle"  :     "scrolling-tabs",                 "src": "/css/jquery.scrolling-tabs.min.css","version": "1"}],
+  "shortcodes"         : [   {   "handle"  :     "shortcodes",                 "src": "/css/shortcodes.css","version": "1"}],
+  "main"         : [   {   "handle"  :     "main",                 "src": "/css/main.css","version": "1"}],
+  "responsive"         : [   {   "handle"  :     "responsive",                 "src": "/css/responsive.css","version": "1"}]
+}

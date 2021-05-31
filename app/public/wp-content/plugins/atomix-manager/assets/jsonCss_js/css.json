@@ -1,0 +1,57 @@
+{
+  "popup":[{
+    "handle":"popup",
+    "src": "/css/popup.css",
+    "version": "1.0"
+  }],
+  "tabs":[{
+    "handle":"tabs",
+    "src": "/tabs/css/tabs.css",
+    "version": "1.0"
+  }],
+  "tabstyles":[{
+    "handle":"tabstyles",
+    "src": "/tabs/css/tabstyles.css",
+    "version": "1.0"
+  }],
+  "tabs-custom":[{
+    "handle":"tabs-custom",
+    "src": "/tabs/css/tabs-custom.css",
+    "version": "1.0"
+  }],
+  "side-modals":[{
+    "handle":"side-modals",
+    "src": "/css/bootstrap-side-modals.css",
+    "version": "1.0"
+  }],
+  "owl-carousel":[{
+    "handle":"owl-carousel",
+    "src": "/css/owl2/owl.carousel.min.css",
+    "version": "1.0"
+  }],
+  "owl-carousel-default":[{
+    "handle":"owl-carousel-default",
+    "src": "/css/owl2/owl.theme.default.css",
+    "version": "1.0"
+  }],
+  "beefup":[{
+      "handle":"beefup",
+      "src": "/css/jquery.beefup.css",
+      "version": "1.0"
+    }],
+  "atomix":[{
+      "handle":"atomix",
+      "src": "/css/atomix.css",
+      "version": "1.0"
+    }],
+  "shortcodes":[{
+    "handle":"shortcodes",
+    "src": "/css/shortcodes.css",
+    "version": "1.0"
+  }],
+  "responsive":[{
+    "handle":"responsive",
+    "src": "/css/responsive.css",
+    "version": "1.0"
+  }]
+}

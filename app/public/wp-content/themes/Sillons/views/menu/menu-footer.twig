@@ -1,0 +1,13 @@
+{# if menu #}
+ <ul class="">
+        {% for item in footer %}
+
+            <li class="{{ item.classes | join(' ') }}">
+                    <a data-hover="{{ item.title }}" target="{{ item.target }}" href="{{ item.link }}">
+                    {{ item.title }}
+                    </a>
+            </li>
+        {% endfor %}
+    </ul>
+{# endif #}
+

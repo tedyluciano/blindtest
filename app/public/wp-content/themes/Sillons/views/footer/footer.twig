@@ -1,0 +1,119 @@
+{#
+    <div class="foot-top"></div>
+    <div class="foot-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-wrap">
+                        <h5>COORDONNEES</h5>
+                        <ul>
+                            <li><p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    ODAS 57 <br>
+                                    BP 10204-57604 <br>
+                                    FORBACH Cedex <br>
+                                </p>
+                            </li>
+                            <li><p><i class="fas fa-phone"></i> 03 87 84 64 64</p></li>
+                            <li><a class="contactBtn" href="{{ function('get_permalink', 43)|e('esc_url') }}"><i class="fas fa-envelope"></i> Contactez-nous</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-wrap">
+                        <h5>SERVICES</h5>
+                        <ul class="list-page">
+                            <li><a href="{{ function('get_the_permalink', 33)|e('esc_url') }}">{{ function('get_the_title', 33) }}</a></li>
+                            <li><a href="{{ function('get_the_permalink', 37)|e('esc_url') }}">{{ function('get_the_title', 37) }}</a></li>
+                            <li><a href="{{ function('get_the_permalink', 39)|e('esc_url') }}">{{ function('get_the_title', 39) }}</a></li>
+                            <li><a href="{{ function('get_the_permalink', 41)|e('esc_url') }}">{{ function('get_the_title', 41) }}</a></li>
+                            <li><a href="#">Appels d’offres</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-wrap">
+                        <h5>ACTUALITÉS</h5>
+                        <div class="odas-footer-post">
+                            {{ function('do_shortcode', '[post-footer]') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-wrap">
+                        <h5>NEWSLETTER</h5>
+                    </div>
+                    <div class="row wra" >
+                        {{ function('do_shortcode', '[mc4wp_form id="146"]') }}
+                    </div>
+                    <p class="lep">Vos informations sont uniquement utilisées pour vous envoyer les lettres d’information d'Odas 57 . Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans la newsletter.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-bttom">
+        <div class="container text-center">
+            <span>ODAS 57 © {{post.date|date('Y')}} - </span>
+            <a href="{{ function('get_the_permalink', 47)|e('esc_url') }}">{{ function('get_the_title', 47) }}</a> -
+            <a href="{{ function('get_the_permalink', 49)|e('esc_url') }}">{{ function('get_the_title', 49) }}</a>
+        </div> <!-- container -->
+    </div>
+#}
+<div id="form-newletter" class="foot-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+               <div class="elementor-widget-container" style="padding-top: .4em">
+                   <h2 class="titleNews">Newsletter</h2>
+               </div>
+            </div>
+            <div class="col-md-9">
+                {{ function('do_shortcode', '[contact-form-7 id="90" title="Newsletter"]') }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <span class="informations-newsletter" style="text-align: center;color:#0e728d;font-size: .7em;display: inline-block">Vos informations sont uniquement utilisées pour vous envoyer les lettres d’information de Sillons. Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans la newsletter.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrap">
+    <div class="container">
+        <div class="row tp">
+            <div class="col-md-4 wrap-left-top">
+                <div class="top-foot-left">
+                    <a class="navbar-brand" href="{{ function('home_url') }}">
+                        <img class="default-img" src="{{ Image(163).src('medium')|e('esc_url') }}" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 wrap-right-top">
+                <div class="top-foot-right">
+                    <a id="access" href="#"><i class="fas fa-universal-access"></i> ACCESSIBILITÉ</a>
+                    <a href="{{ function('get_the_permalink', 8)|e('esc_url') }}"> {{ function('get_the_title', 8) }}</a>
+                    <a href="{{ function('get_the_permalink', 20)|e('esc_url') }}"> {{ function('get_the_title', 20) }}</a>
+                    <a href="{{ function('get_the_permalink', 23)|e('esc_url') }}"> {{ function('get_the_title', 23) }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="row bt">
+            <div class="col-md-4 wrap-right-bottom">
+                <div class="bottom-foot-left">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-md-8 wrap-right-bottom">
+                <div class="bottom-foot-right">
+                    <a href="{{ function('get_the_permalink', 158)|e('esc_url') }}"> {{ function('get_the_title', 158) }}</a>
+                    <a href="{{ function('get_the_permalink', 160)|e('esc_url') }}"> {{ function('get_the_title', 160) }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

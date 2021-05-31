@@ -1,0 +1,83 @@
+{
+
+  "slick": [{
+    "handle": "slick",
+    "src": "/js/slick.min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "sticksy": [{
+    "handle": "sticksy",
+    "src": "/js/sticksy.min.js",
+    "version": "1.0.0",
+    "footer": false
+  }],
+  "garand-sticky": [{
+    "handle": "garand-sticky",
+    "src": "/js/garand-sticky/jquery.sticky.js",
+    "version": "1.0.0",
+    "footer": false
+  }],
+  "tabsjs": [{
+    "handle": "tabsjs",
+    "src": "/tabs/js/cbpFWTabs.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "nice-select": [{
+    "handle": "nice-select",
+    "src": "/js/jquery.nice-select.min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "matchHeight": [{
+    "handle": "matchHeight",
+    "src": "/js/jquery.matchHeight-min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "bootstrap": [{
+    "handle": "bootstrap",
+    "src": "/js/bootstrap/bootstrap.min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "bootstrap_bundle": [{
+    "handle": "bootstrap_bundle",
+    "src": "/js/bootstrap/bootstrap.bundle.min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "owl": [{
+    "handle": "owl",
+    "src": "/js/owl2/owl.carousel.min.js",
+    "version": "1.0.0",
+    "footer": true
+  }],
+  "kpopup": [{
+  "handle": "kpopup",
+  "src": "/js/kpopup.js",
+  "version": "1.0.0",
+    "footer": false
+    }],
+  "sh-layer-popup": [{
+  "handle": "sh-layer-popup",
+  "src": "/js/jquery.beefup.min.js",
+  "version": "1.0.0",
+    "footer": true
+    }],
+  "beefup": [{
+  "handle": "beefup",
+  "src": "/js/jquery.sh-layer-popup.js",
+  "version": "1.0.0",
+    "footer": true
+    }],
+    "atomix-m": [{
+      "handle": "atomix-m",
+      "src": "/js/atomix.js",
+      "version": "1.0.0",
+      "footer": true
+    }]
+
+}
+

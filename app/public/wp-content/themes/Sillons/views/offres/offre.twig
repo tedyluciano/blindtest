@@ -1,0 +1,90 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% block header %}{% include 'header/header-page.twig' %}{% endblock %}
+    <div class="main-content">
+        <div class="single-content">
+            <div class="mo-blog-archive container">
+
+                <div class="content mo-blog">
+                    <div class="posts masonry-posts">
+
+                        {% for post in posts %}
+
+                                {% set contrat = function('get_field', 'contrat') %}
+                                {% set niveau_etude = function('get_field', 'niveau_etude') %}
+                                {% set departement = function('get_field', 'departement') %}
+                                {% set lieu = function('get_field', 'lieu') %}
+                                {% set description_du_poste = function('get_field', 'description_du_poste') %}
+                                 {#{% set description_du_poste_es = function('_e', description_du_poste) %}#}
+                                {% set profil = function('get_field', 'profil') %}
+                                {% set mission = function('get_field', 'mission') %}
+                                {% set information_complemantaire = function('get_field', 'information_complemantaire') %}
+
+
+                            <div class="content-header">
+                                <div class="row infoHeadBlock">
+                                    <div class="col-md-3">
+                                        <h6 class="text-center">Contrat</h6>
+                                        <p> {{ contrat }}</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="text-center">Niveau d’études</h6>
+                                        <p> {{ niveau_etude }}</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="text-center">Département</h6>
+                                        <p> {{ departement }}</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="text-center">Ville</h6>
+                                        <p> {{ lieu }}</p>
+                                    </div>
+                                </div>
+                                <div class="row infoBodyBlock" >
+                                    <div class="col-md-12" style="margin-bottom: 1em;">
+                                        <div class="descp-poste all_in">
+                                            <h6 class="ttle" style="margin-bottom: 1em;">Description du poste</h6>
+                                            {{ description_du_poste }}
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mission-poste">
+                                            <h6 class="ttle">Mission</h6>
+                                            {{ mission }}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="profil-poste">
+                                            <h6 class="ttle">Profil</h6>
+                                            {{ profil }}
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row infoFooterBlock" >
+                                    <div class="col-md-12">
+                                        <h6 class="ttle" style="margin-bottom: 1em;">Information complementaire</h6>
+                                        <p>{{ information_complemantaire }}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        {% endfor %}
+
+                    </div><!-- posts -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- End Content -->
+
+
+            </div> <!-- End container -->
+        </div><!-- End single-content -->
+    </div> <!-- End main-content -->
+{% endblock %}

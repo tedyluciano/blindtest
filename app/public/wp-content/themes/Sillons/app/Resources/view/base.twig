@@ -1,0 +1,48 @@
+{% block html_head_container %}
+
+    {% include 'header/html-header.twig' %}
+    {% block head %}
+    {% endblock %}
+    </head>
+{% endblock %}
+
+<body class="{{body_class}}">
+
+<!--====== PRELOADER PART START ======-->
+
+<div class="preloader js-preloader flex-center">
+    <div class="pre-load wrap-img">
+        <img class="default-img" src="{{ Image(1107).src('medium')|e('esc_url') }}" alt="Logo">
+    </div>
+</div>
+<!--====== PRELOADER ENDS START ======-->
+
+{% set opPage =  options.tabs %}
+
+
+
+<div class="main">
+{% include 'header/header.twig' with { menu : header } %}
+
+{% include 'menu/menu.twig' with { menu : header }  %}
+
+
+    <div class="wrapper {% if opPage == 'Onglet' %}onglette{% else %}menu-page{% endif %}">
+
+    {% block content %}
+        Pas de contenu trouvé!
+    {% endblock %}
+
+    </div>
+
+
+
+{% block footer %}
+    <footer id="footer">
+        {% include 'footer/footer.twig' %}
+    </footer>
+    {{wp_footer}}
+{% endblock %}
+</div>
+</body>
+</html>

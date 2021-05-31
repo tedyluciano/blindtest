@@ -1,0 +1,137 @@
+{% block header %}
+    <!--====== HEADER PART START ======-->
+
+
+<div class="navigation-wrap bg-light start-header start-style">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-top">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="acc">
+                        <a id="top-access" href="#"><i class="fas fa-universal-access"></i> ACCESSIBILITÉ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 right-top">
+                    <div class="profl">
+                        <a href="#"><i class="fas fa-user-md"></i> ACCÈS PROFESSIONNELS</a>
+                    </div>
+                    <div class="user-patient">
+                        <a href="#"><i class="fas fa-user-alt"></i> ACCÈS PATIENTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <nav id="nav" class="ry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 left-side">
+                        <a class="navbar-brand" href="{{ function('home_url') }}">
+                            <img class="default-img" src="{{ Image(54).src('medium')|e('esc_url') }}" alt="Logo" width="90%">
+                        </a>
+                    </div>
+                    <div class="col-md-9 right-side">
+
+                        <ul id="main-menu">
+                            {% for item in menu.items %}
+                                <li class="nav_item {% if item.current %}active{% endif %}  {{ item.classes|join(' ') }}">
+                                    <a class="" href="{{ item.link }}">
+                                        {{ item.title }}
+                                        {% if item.children %} <i class="fas fa-angle-down"></i>{% endif %}
+                                    </a>
+                                    {% if item.children %}
+                                    <ul class="submenu">
+                                        {% for child in item.children %}
+                                            <li>
+                                                <a href="{{ child.link }}">
+                                                    {{ child.title }}
+                                                    {% if child.children %} <i class="fas fa-angle-down"></i>{% endif %}
+                                                </a>
+                                                {% if child.children %}
+                                                    <ul class="submenu">
+                                                        {% for child2 in child.children %}
+                                                            <li>
+                                                                <a href="{{ child2.link }}">
+                                                                    {{  child2.title }}
+                                                                    {% if child2.children %} <i class="fas fa-angle-down"></i>{% endif %}
+                                                                </a>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+
+                                      <!--  <li><a href="#0">Careers</a></li>
+                                        <li>
+                                            <a href="#0">More Items <i class="fa fa-caret-right"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#0">A Sub-Item</a></li>
+                                                <li>
+                                                    <a href="#0">A Sub-Item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">A Sub-Item</a>
+                                                </li>
+                                            </ul>
+                                        </li>-->
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                          {#  <li>
+                                <a href="#"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user"></i> About <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#0">Meet the Team</a></li>
+                                    <li><a href="#0">Careers</a></li>
+                                    <li>
+                                        <a href="#0">More Items <i class="fa fa-caret-right"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="#0">A Sub-Item</a></li>
+                                            <li>
+                                                <a href="#0">A Sub-Item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#0">A Sub-Item</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-briefcase"></i> Clients <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#0">Lorem</a></li>
+                                    <li><a href="#0">Aliquam</a></li>
+                                    <li><a href="#0">Vestibulum</a></li>
+                                    <li><a href="#0">Ipsum</a></li>
+                                    <li><a href="#0">Consectetur</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comment"></i> Contact Us</a>
+                            </li>#}
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </nav>
+</div>
+
+
+
+
+    <!--====== HEADER PART ENDS ======-->
+{% endblock %}
+
+
+

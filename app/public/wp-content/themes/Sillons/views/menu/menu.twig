@@ -1,0 +1,61 @@
+{#
+    <ul id="menu-main-menu" class="text-right">
+        {% for item in menu %}
+
+            <li class="{{ item.classes | join(' ') }} nomega-menu-item">
+                    <a data-hover="{{ item.title }}" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+                    {% if item.children %}
+                        <ul class="depth0  sub-menu">
+                            {% for child in item.children %}
+                                <li class="nomega-menu-item">
+                                    <a href="{{ child.link }}">{{ child.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                <a class="mb-dropdown-icon hidden-lg hidden-md" href="#"></a>
+            </li>
+        {% endfor %}
+    </ul>
+ #}
+
+<div class="menu">
+    <nav class="nav-main">
+        <div class="nav-container">
+
+
+            <ul class="first-level">
+                {% for item in menu.items %}
+                    <li class="{% if item.children %}has-sub-nav{% endif %}">
+                        <a href="{% if item.children %}#{% else %}{{ item.link }}{% endif %}">{{ item.title }}</a>
+                    {% if item.children %}
+
+
+
+                        <ul class="last-level">
+                            <li class="has-sub-nav"><a class="back_" href="#"><i class="fas fa-chevron-left"></i> Menu principal</a></li>
+                            {% for child in item.children %}
+
+
+                            <li>
+                                <a href="{{ child.link }}">{{ child.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+            <div id="sb-search" class="sb-search">
+                <form>
+                    <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"></span>
+                </form>
+            </div>
+
+
+
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+
+    {% block header %}{% include 'header/header-page.twig' %}{% endblock %}
+<section class="single">
+
+<div class="container">
+    <div class="date" style="margin-bottom: 1em">
+        <ul class="meta-post">
+            <li><i class="far fa-calendar-alt"></i> {{ post.date }}</li>
+        </ul>
+    </div>
+    <article id="tease-{{post.ID}}" class="masonry-post post post-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        {#<div class="post-media post-image">
+            <img class="img-fluid" src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+        </div>#}
+
+        <div class="info-post">
+            {#  <p class="term">{{ function('the_terms', function('get_the_ID'), 'category' ) }}</p>#}
+        {{ post.content }}
+
+        </div>
+    </article>
+</div>
+
+
+</section>
+
+    
+    
+{% endblock %}

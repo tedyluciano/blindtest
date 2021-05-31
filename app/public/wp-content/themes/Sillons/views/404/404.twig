@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+
+<section id="error-page">
+    <div class="overlay-errors"></div>
+	<div class="main-content">
+		<div class="page-404">
+			<div class="container">
+				<div class="text-center">
+					<h1 class="lrg">{{ p_404|e('esc_html') }}</h1>
+					<h4>{{ 'Oops! Cette page est introuvable.'|e('esc_html') }}</h4>
+					<p>{{ 'Veuillez cliquer sur le bouton ci-dessous pour revenir à  l\'accueil'|e('esc_html') }}</p>
+					<a href="{{ function('home_url')|e('esc_url')  }}" class="button light hr_light bg_gradient bg_hr_gradient slide">{{ 'Retour à l\'accueil'|e('esc_html') }}<i class="ion-arrow-right-c"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

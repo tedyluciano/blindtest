@@ -1,0 +1,56 @@
+{% extends "base.twig" %}
+
+{# RENDU INDEX  /views/home.twig #}
+
+{% block content %}
+    {{ function('header_pageAll') }}
+
+
+    {{ function('ede_title_bar', tb_show_page_title, tb_show_page_breadcrumb) }}
+
+
+    <div class="main-content">
+        <div class="single-content">
+            <div class="mo-blog-archive container">
+
+
+                {%  if function('is_active_sidebar', 'ede-main-sidebar') is not empty or function('is_active_sidebar', 'ede-left-sidebar') is not empty or function('is_active_sidebar', 'ede-right-sidebar') is not empty %}
+                    {% if tb_blog_layout == '2cl' or tb_blog_layout == '2cr' %} {% set cl_content = 'with-sidebar' %} {% endif %}
+                {% endif %}
+
+
+                <!-- Start Left Sidebar -->
+                {% if tb_blog_layout == '2cl'  %}
+                    {% if function('is_active_sidebar', 'ede-left-sidebar') %} <div class="sidebar sidebar-left">{{ left_sidebar }}</div>
+                    {% elseif function('is_active_sidebar', 'ede-main-sidebar') %}<div class="sidebar sidebar-left">{{ main_sidebar }}</div>{% endif %}
+                {% endif %}
+                <!-- End Left Sidebar -->
+
+
+                <div class="content mo-blog">
+                    <div class="posts masonry-posts">
+
+                        {% for post in posts %}
+
+                                {% include ['tease.twig'] %}
+
+                        {% endfor %}
+
+                    </div><!-- posts -->
+                    <div class="clearfix"></div>
+                    {{ function('ede_paging_nav') }}
+                </div>
+                <!-- End Content -->
+
+                <!-- Start Left Sidebar -->
+                {% if tb_blog_layout == '2cr'  %}
+                    {% if function('is_active_sidebar', 'ede-right-sidebar') %} <div class="sidebar sidebar-right">{{ right_sidebar }}</div>
+                    {% elseif function('is_active_sidebar', 'ede-main-sidebar') %}<div class="sidebar sidebar-right">{{ main_sidebar }}</div>{% endif %}
+                {% endif %}
+                <!-- End Left Sidebar -->
+
+            </div> <!-- End container -->
+        </div><!-- End single-content -->
+    </div> <!-- End main-content -->
+
+{% endblock %}
